@@ -2,6 +2,8 @@ name: Security Audit
 on:
   schedule:
     - cron: '30 * * * *'
+env:
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 jobs:
   audit:
     name: Security Audit
